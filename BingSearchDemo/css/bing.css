@@ -1,0 +1,61 @@
+ body{background: #333;}
+        #bg_div{
+            position: relative;
+            background-image: url(../images/bg.jpg);
+            width:1300px;height:690px;
+            margin:0 auto;
+        }
+        #search_box{
+            position: absolute;
+            top:150px;
+            left: 200px;
+        }
+        #logo{
+            background-image: url(../images/logo.png);
+            height:53px;width: 107px;
+            float: left;
+            margin: -4px 18px 0 0;
+        }
+        #search_form{
+            background-color: #fff;
+            float: left;
+            padding: 5px;
+        }
+        #search_input{
+        	font-size: 20px;
+            height:29px;
+            line-height: 29px;
+            width: 350px;
+            border: 0;
+            outline: none;
+            float: left;
+        }
+        #search_submit{
+            background-image: url(../images/search-button.png);
+            width:29px;
+            height:29px;
+            border: 0;
+        }
+        #suggest{
+            display: none;
+            width:388px;
+            background-color:#fff;
+            position:absolute;
+            border-width:1px;
+            border-style:solid;
+            border-color: #999;
+            padding: 0;
+            margin: 0;
+        }
+        #suggest_result{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        #suggest_result li{
+            padding:3px;line-height:25px;font-size: 14px;color: #777;
+            cursor: pointer;
+        }
+        #suggest_result li:hover{
+            background-color:#e5e5e5;;
+        }
