@@ -19,7 +19,7 @@
 	</div>
 	
 </div>
-<div id="suggest">
+<div id="suggest" style="top: 193px; left: 325px;">
 	<ul id="suggest_result">
 	</ul>
 </div>
@@ -37,11 +37,7 @@
              html += '<li>' + d[i].Txt + '</li>';
          }
 		$('#suggest_result').html(html);
-		$('#suggest').css({
-		  	top:$('#search_form').offset().top+$('#search_form').height()+10,
-		  		left:$('#search_form').offset().left
-		  		//position:'absolute'
-		  		}).show();
+		$('#suggest').show();
 			};
     $.ajax({
     	type:"GET",
@@ -57,7 +53,7 @@
     });
   	// 用户点击其他位置搜索框消失 提高用户体验
   $(document).on('click',function(){
-  	$('#suggest').hide();
+  	$('#suggest').fadeOut(300);
   });
   // 事件代理 同事给多个元素绑定事件 并且这些节点是通过js动态生成的一般会用事件代理
   //jquery的delegate()方法
